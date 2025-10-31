@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mariposa Monarca (Danaus plexippus) — Guía completa</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#fff;--accent:#ff7a00;--muted:#556;--radius:12px}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.5;color:var(--muted);margin:0;background:var(--bg);padding:24px}
+    .wrap{max-width:980px;margin:0 auto}
+    header{display:flex;gap:16px;align-items:center}
+    header img{width:96px;height:96px;object-fit:cover;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    h1{margin:0;font-size:28px;color:#1f2937}
+    .subtitle{color:#374151;margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,17,23,0.04)}
+    nav ul{padding:0;margin:0;list-style:none}
+    nav li{margin:8px 0}
+    nav a{color:var(--accent);text-decoration:none}
+    section h2{margin-top:0;color:#0f172a}
+    figure{margin:0}
+    img.responsive{max-width:100%;border-radius:8px}
+    dl{display:grid;grid-template-columns:150px 1fr;gap:8px 18px}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#fffbf0;color:#7a4400;font-weight:600}
+    footer{margin-top:28px;text-align:center;color:#94a3b8;font-size:14px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .card.sidebar{order:2}}
+    /* Animaciones adicionales */
+  html{scroll-behavior:smooth}
+  @keyframes titleGlow{
+    0%{text-shadow:0 0 0 rgba(255,122,0,0)}
+    100%{text-shadow:0 0 14px rgba(255,122,0,.65)}
+  }
+  @keyframes butterflyFly{
+    0%{transform:translateY(0) rotate(0deg)}
+    50%{transform:translateY(-10px) rotate(3deg)}
+    100%{transform:translateY(0) rotate(0deg)}
+  }
+  h1{animation:titleGlow 2s ease-in-out infinite alternate}
+  .butterfly{
+    position:fixed;right:20px;bottom:40px;font-size:32px;animation:butterflyFly 2.4s ease-in-out infinite}
+  .card{animation:fadeIn .6s ease both}
+  header img:hover, img.responsive:hover{animation:hoverZoom .25s forwards ease-in-out}
+  @keyframes fadeIn{
+    from{opacity:0;transform:translateY(10px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  @keyframes hoverZoom{
+    from{transform:scale(1)}
+    to{transform:scale(1.05)}
+  }
+  .card{animation:fadeIn .6s ease both}
+  header img:hover, img.responsive:hover{animation:hoverZoom .25s forwards ease-in-out}
+  /* Animación de entrada suave y satisfacción visual */
+  @keyframes smoothPop{
+    0%{transform:scale(.92);opacity:0}
+    60%{transform:scale(1.04);opacity:1}
+    100%{transform:scale(1)}
+  }
+  section{
+    animation:smoothPop .7s cubic-bezier(.25,.9,.35,1.2) both;
+    transition:background .4s, transform .25s;
+    border-radius:var(--radius);
+    padding:12px;
+  }
+  section:hover{
+    background:rgba(255,122,0,0.08);
+    transform:translateY(-3px);
+  }
+  h2{
+    position:relative;
+    overflow:hidden;
+  }
+  h2::after{
+    content:"";
+    position:absolute;
+    width:100%;height:3px;left:-100%;bottom:-2px;
+    background:var(--accent);
+    animation:underlineSlide 1.2s ease forwards;
+  }
+  @keyframes underlineSlide{
+    to{left:0}
+  }
+  .card{backdrop-filter:blur(6px);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Monarch_In_May.jpg" alt="Mariposa Monarca"/>
+      <div>
+        <h1>Mariposa Monarca (Danaus plexippus)</h1>
+        <p class="subtitle">Guía completa: apariencia, ciclo de vida, migración, alimentación, amenazas y cómo ayudar.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <section id="resumen">
+          <h2>Resumen</h2>
+          <p>La mariposa monarca (<em>Danaus plexippus</em>) es una de las especies de lepidópteros más conocidas, famosa por su coloración naranja y negra y, sobre todo, por sus largas migraciones en Norteamérica. Las poblaciones migratorias realizan viajes de miles de kilómetros entre sitios de reproducción en Estados Unidos y Canadá y zonas de hibernación en México y en la costa oeste de EE. UU.</p>
+        </section>
+
+        <section id="taxonomia">
+          <h2>Taxonomía y nombres</h2>
+          <dl>
+            <dt>Nombre científico</dt><dd><em>Danaus plexippus</em></dd>
+            <dt>Familia</dt><dd>Nymphalidae (mariposas de los árboles)</dd>
+            <dt>Subespecies</dt><dd>Existen variaciones locales y subspecies, algunas residentes y otras migratorias.</dd>
+          </dl>
+        </section>
+
+        <section id="apariencia">
+          <h2>Apariencia</h2>
+          <p>Adultos con alas de color naranja brillante, nervaduras y borde negro con puntos blancos. Las hembras suelen tener un trazado de nervaduras más grueso; los machos presentan además dos puntos en las alas posteriores (glándulas de feromona).</p>
+          <figure>
+            <img class="responsive" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg" alt="Detalle mariposa monarca" />
+            <figcaption>Detalle de la monarca (alas, patrón negro y puntos blancos).</figcaption>
+          </figure>
+        </section>
+
+        <section id="ciclo-vida">
+          <h2>Ciclo de vida</h2>
+          <p>Completo: huevo &rarr; oruga (larva) &rarr; crisálida (pupa) &rarr; adulto. El proceso dura desde unas pocas semanas hasta varios meses, según la generación y las condiciones climáticas.</p>
+          <ul>
+            <li><strong>Huevo:</strong> pequeño y de forma ovalada, depositado en la cara inferior de las hojas de algodoncillo (milkweed).</li>
+            <li><strong>Oruga:</strong> rayada en blanco, negro y amarillo; come exclusivamente plantas del género <em>Asclepias</em> (milkweeds) y almacena toxinas defensivas (cardenólidos).</li>
+            <li><strong>Crisálida:</strong> de color verde con puntos dorados; dentro ocurre la metamorfosis.</li>
+            <li><strong>Adulto:</strong> emerge tras días o semanas; la generación migratoria vive más tiempo (meses) que las generaciones reproductivas.</li>
+          </ul>
+        </section>
+
+        <section id="migracion">
+          <h2>Migración</h2>
+          <p>La monarca es famosa por su migración anual. La población oriental de Norteamérica viaja hasta los bosques de oyamel en el centro de México (Reserva de la Biosfera de la Mariposa Monarca) para pasar el invierno. La población occidental suele invernar en la costa de California. Las mariposas que migran no regresan a reproducirse: su descendencia completa el camino de vuelta.</p>
+          <p class="badge">Dato: </p> <p>Algunas mariposas recorren más de 4.000 km en varias etapas —un logro notable para insectos tan frágiles.</p>
+        </section>
+
+        <section id="alimentacion-y-plantas">
+          <h2>Alimentación y plantas hospedadoras</h2>
+          <p>Las orugas se alimentan casi exclusivamente de algodoncillo (<em>Asclepias</em>), que les proporciona cardenólidos —sustancias tóxicas que las protegen de depredadores. Los adultos se alimentan del néctar de flores diversas: asclepias, equinácea, cosmos, y muchas otras flores ricas en néctar.</p>
+        </section>
+
+        <section id="depredadores-defensa">
+          <h2>Depredadores y defensa</h2>
+          <p>Gracias a las toxinas obtenidas de las plantas hospedadoras, las monarcas son desagradables al paladar de muchos depredadores. Su coloración naranja y negra actúa como señal de advertencia (aposematismo). También existen especies miméticas, como la mariposa viceroy.</p>
+        </section>
+
+        <section id="amenazas">
+          <h2>Amenazas y conservación</h2>
+          <p>Las principales amenazas son la pérdida de hábitat y plantas hospedadoras (por agricultura intensiva y herbicidas), la deforestación de sitios de invernada en México, cambios climáticos que alteran rutas y temperaturas, y enfermedades/parásitos. En las últimas décadas las poblaciones migratorias han sufrido grandes fluctuaciones y declives locales.</p>
+        </section>
+
+        <section id="como-ayudar">
+          <h2>Cómo ayudar</h2>
+          <ol>
+            <li>Plantar algodoncillo (<em>Asclepias</em>) y flores ricas en néctar nativas.</li>
+            <li>Evitar el uso de pesticidas e insecticidas en jardines.</li>
+            <li>Participar en conteos locales y proyectos de ciencia ciudadana (ej.: Journey North).</li>
+            <li>Apoyar conservación de bosques de invernada y corredores de migración.</li>
+            <li>Educar y compartir prácticas para jardinería amigable con polinizadores.</li>
+          </ol>
+        </section>
+
+        <section id="curiosidades">
+          <h2>Curiosidades</h2>
+          <ul>
+            <li>La monarca es capaz de orientarse usando el sol y posiblemente campos magnéticos terrestres.</li>
+            <li>Las mariposas que migran (la llamada "generación M") viven mucho más que las generaciones reproductivas: pueden vivir varios meses para completar la migración y la hibernación.</li>
+            <li>En México hay una fuerte conexión cultural: la llegada de las monarcas coincide con el Día de Muertos en algunas regiones y se asocian con las almas de los antepasados.</li>
+        </ul>
+        </section>
+
+      </main>
+
+      <aside class="card sidebar">
+        <nav>
+          <h3>Índice</h3>
+          <ul>
+            <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#taxonomia">Taxonomía</a></li>
+            <li><a href="#apariencia">Apariencia</a></li>
+            <li><a href="#ciclo-vida">Ciclo de vida</a></li>
+            <li><a href="#migracion">Migración</a></li>
+            <li><a href="#alimentacion-y-plantas">Alimentación</a></li>
+            <li><a href="#depredadores-defensa">Depredadores</a></li>
+            <li><a href="#amenazas">Amenazas</a></li>
+            <li><a href="#como-ayudar">Cómo ayudar</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+          </ul>
+        </nav>
+
+        <section style="margin-top:18px">
+          <h3>Imágenes</h3>
+          <figure>
+            <img class="responsive" src="https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/las-mariposas-monarca-y-los-esturiones-engrosan-la-lista-roja-de-especies-amenazadas/9646717-1-esl-MX/Las-mariposas-monarca-y-los-esturiones-engrosan-la-lista-roja-de-especies-amenazadas.jpg" alt="Monarch on flower" />
+            <figcaption>Adulto alimentándose de néctar.</figcaption>
+          </figure>
+        </section>
+
+        <section style="margin-top:18px">
+          <h3>Breve ficha</h3>
+          <dl>
+            <dt>Tamaño</dt><dd>Envergadura: 8.9–10.2 cm (aprox.)</dd>
+            <dt>Distribución</dt><dd>América, introducida en otras regiones; migraciones notables en Norteamérica.</dd>
+            <dt>Estado</dt><dd>Variaciones según la región; preocupaciones de conservación para poblaciones migratorias.</dd>
+          </dl>
+        </section>
+      </aside>
+    </div>
+
+  </div>
+</body>
+</html>
